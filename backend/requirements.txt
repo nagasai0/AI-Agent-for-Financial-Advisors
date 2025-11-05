@@ -1,0 +1,35 @@
+fastapi[all]>=0.104.1
+uvicorn>=0.30.0
+gunicorn==21.2.0
+# If you want the extras, add them explicitly with versions that support 3.13:
+uvloop>=0.20.0; sys_platform != "win32"
+httptools>=0.6.1; platform_python_implementation == "CPython"
+
+python-dotenv==1.0.0
+httpx==0.25.2
+pydantic>=2.8.0
+sqlalchemy>=2.0.35
+
+
+# PostgreSQL adapter - using psycopg2-binary for better compatibility
+psycopg2-binary>=2.9.9
+tiktoken[binary]>=0.7.0
+tiktoken>=0.7.0
+
+pgvector==0.2.4
+redis==5.0.1
+rq==1.15.1
+google-generativeai==0.8.3
+google-api-python-client==2.108.0
+google-auth==2.23.4
+google-auth-oauthlib==1.1.0
+hubspot-api-client==7.0.0
+
+# tiktoken: bump for Python 3.13 wheels
+tiktoken>=0.7.0
+
+alembic==1.12.1
+python-multipart==0.0.6
+itsdangerous==2.1.2
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
